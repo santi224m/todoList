@@ -1,0 +1,59 @@
+.content .todo-content .todo-titles {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+  .content .todo-content .todo-titles .time {
+    margin-bottom: 3rem; }
+  .content .todo-content .todo-titles .title {
+    padding-bottom: 2rem; }
+    .content .todo-content .todo-titles .title form {
+      display: grid;
+      margin-top: 3rem;
+      width: 22rem; }
+      .content .todo-content .todo-titles .title form label {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        padding-bottom: 2rem;
+        justify-self: center; }
+        .content .todo-content .todo-titles .title form label input {
+          width: 16rem; }
+      .content .todo-content .todo-titles .title form button#goBack {
+        grid-column: 1 / 2;
+        grid-row: 2; }
+      .content .todo-content .todo-titles .title form button#createButton {
+        grid-column: 4 / 5;
+        grid-row: 2; }
+
+a.btn-main {
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  outline: none; }
+
+@media only screen and (max-width: 1080px) {
+  .content .todo-content .todo-titles {
+    margin-top: 10rem;
+    grid-template-columns: repeat(2, 1fr); }
+    .content .todo-content .todo-titles .time {
+      justify-content: center;
+      display: block;
+      justify-self: center; }
+    .content .todo-content .todo-titles .title {
+      justify-content: center;
+      grid-row: 2; } }
+
+@media only screen and (max-width: 510px) {
+  .content .todo-content {
+    height: 80vh;
+    width: 80vw; }
+    .content .todo-content .todo-titles {
+      margin-top: 4rem; } }
+
+@media only screen and (max-width: 350px) {
+  .content .todo-content {
+    height: 100vh;
+    width: 100vw; }
+    .content .todo-content .todo-titles {
+      margin-top: 1rem; }
+      .content .todo-content .todo-titles .title form label input {
+        width: 10rem; } }

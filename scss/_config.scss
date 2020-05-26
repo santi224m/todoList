@@ -1,0 +1,20 @@
+
+@charset 'utf-8';
+// Variables
+$website-width: 1140px;
+$website-width-large: 1350px;
+$main-color: #33cccc;
+$light-color: #fff;
+$medium-color: #454545;
+$secondary-color: rgba(69,69,69,0.7);
+$dark-color:  #395160;
+$bg-medium: #fafafa;
+
+// Set Text Color
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    }   @else {
+        @return #fff;
+    }
+} 

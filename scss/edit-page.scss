@@ -1,0 +1,94 @@
+// @import 'config';
+// @import 'general_style';
+// @import 'utilities';
+
+.content .todo-content .todo-titles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    .time {
+        margin-bottom: 3rem;
+    }
+
+    .title {
+        padding-bottom: 2rem;
+
+        form {
+           display: grid;
+           margin-top: 3rem;
+           width: 22rem;
+   
+           label {
+               grid-column: 1 / 5;
+               grid-row: 1;
+               padding-bottom: 2rem;
+               justify-self: center;
+
+               input {
+                   width: 16rem;
+               }
+           }
+   
+           button#goBack {
+               grid-column: 1 / 2;
+               grid-row: 2;
+           }
+   
+           button#createButton {
+               grid-column: 4 / 5;
+               grid-row: 2;
+           }
+       }
+    }
+}
+
+a.btn-main {
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    outline: none;
+} 
+
+@media only screen and (max-width: 1080px){
+    .content .todo-content .todo-titles {
+        margin-top: 10rem;
+        grid-template-columns: repeat(2, 1fr);
+        .time {
+           justify-content: center;
+           display: block;
+           justify-self: center;
+       }
+        
+       .title {
+           justify-content: center;
+           grid-row: 2;
+       }
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .content .todo-content {
+        height: 80vh;
+        width: 80vw;
+
+        .todo-titles {
+            margin-top: 4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .content .todo-content {
+        height: 100vh;
+        width: 100vw;
+
+        .todo-titles {
+            margin-top: 1rem;
+
+            .title form label input {
+                width: 10rem;
+            }
+        }
+    }
+}

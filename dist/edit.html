@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- <script src="https://kit.fontawesome.com/9808c8520d.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/edit-page.css">
+    <title>Todo List</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="description" content="A quick todo list that doesn't require login">
+</head>
+<body>
+    <div class="content">
+        <div class="todo-content">
+            <div class="title">
+                <h1>Edit Todo</h1>
+            </div>
+
+                <div class="todo-titles">
+                    <div class="time">
+                        <label for="todoTime">
+                            Time: <select name="time" id="time">
+                                <option value="-1" selected></option>
+                                <option value="0">12:00 AM</option>
+                                <option value="1">12:30 AM</option>
+                                <option value="2">1:00 AM</option>
+                                <option value="3">1:30 AM</option>
+                                <option value="4">2:00 AM</option>
+                                <option value="5">2:30 AM</option>
+                                <option value="6">3:30 AM</option>
+                                <option value="7">4:30 AM</option>
+                                <option value="8">5:00 AM</option>
+                                <option value="9">5:30 AM</option>
+                                <option value="10">6:00 AM</option>
+                                <option value="11">6:30 AM</option>
+                                <option value="12">7:00 AM</option>
+                                <option value="13">7:30 AM</option>
+                                <option value="14">8:00 AM</option>
+                                <option value="15">8:30 AM</option>
+                                <option value="16">9:00 AM</option>
+                                <option value="17">9:30 AM</option>
+                                <option value="18">10:00 AM</option>
+                                <option value="19">10:30 AM</option>
+                                <option value="20">11:00 AM</option>
+                                <option value="21">11:30 AM</option>
+                                <option value="22">12:00 PM</option>
+                                <option value="23">12:30 PM</option>
+                                <option value="24">1:00 PM</option>
+                                <option value="25">1:30 PM</option>
+                                <option value="26">2:00 PM</option>
+                                <option value="27">2:30 PM</option>
+                                <option value="28">3:00 PM</option>
+                                <option value="29">3:30 PM</option>
+                                <option value="30">4:00 PM</option>
+                                <option value="31">4:30 PM</option>
+                                <option value="32">5:00 PM</option>
+                                <option value="33">5:30 PM</option>
+                                <option value="34">6:00 PM</option>
+                                <option value="35">6:30 PM</option>
+                                <option value="36">7:00 PM</option>
+                                <option value="37">7:30 PM</option>
+                                <option value="38">8:00 PM</option>
+                                <option value="39">8:30 PM</option>
+                                <option value="40">9:00 PM</option>
+                                <option value="41">9:30 PM</option>
+                                <option value="42">10:00 PM</option>
+                                <option value="43">10:30 PM</option>
+                                <option value="44">11:00 PM</option>
+                                <option value="45">11:30 PM</option>
+                            </select>
+                        </label>
+                    </div>
+                    
+                    <div class="title">
+                        <form id="newTodo">
+                            <label for="todoTitle">
+                                Title: <input type="text" name="title" id="title" placeholder="Todo Title">
+                            </label>
+                            <!-- <button type="submit" class="btn-main" id="goBack"><a href="index.html">Go Back</a></button> -->
+                            <a href="index.html" class="btn-main" id="goBack">Go Back</a>
+                            <button type="submit" class="btn-main" id="createButton">Save</button>
+                        </form>
+                    </div>
+            </div>            
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="js/todo-functions.js"></script>
+    <script src="js/edit-todo.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</body>
+</html>
